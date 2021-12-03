@@ -1,39 +1,45 @@
+
+
 body{
-    background: rgb(187, 141, 55);
+    background: rgb(202, 157, 73);
 }
 
 #corpoCalculadora{
     background: white;
     width: 320px;
     height: 510px;
-    margin: 40px auto;
+    margin: 80px auto;
+    border-radius: 10px;
 }
 
 #tela{
     height: 140px;
-    border: 1px solid red;
+    /* border: 1px solid rgb(0, 0, 0); */
+    text-align: center ;
+    font-size: 50px;
 }
 
 
 table{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 100%;
 }
 
-#botoes{
-    font-weight: bold;
-    font-size: 30px;
-    
+.botoes td{
+    padding: 0px;
+    margin: 0px;
 }
 
 .botoes input{
-    /* text-align: center; */
+    font-weight: bold;
+    font-size: 22px;
     width: 100%;
     height: 74px;
-    /* border: 1px solid red; */
     border: none;
+    padding: 0px;
     border-radius: 3px;
+    /* border: 1px solid red; */
     
 }
 .botoes input:hover{
@@ -48,3 +54,5 @@ table{
     background: rgb(65, 153, 212);
 
  }
+
+ 
