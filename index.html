@@ -12,7 +12,9 @@
     
     <main>
         <div id="corpoCalculadora">
-            <div id="tela">
+            <div id="visor">
+                <div id="acumulador"></div>
+                <div id="tela">0</div>
                
             </div>
             <div class="botoes">
@@ -27,25 +29,25 @@
                         <td><input type="button" value="7 " onclick="AddNumber(7)"></td>
                         <td><input type="button" value="8" onclick="AddNumber(8)"></td>
                         <td><input type="button" value="9 " onclick="AddNumber(9)"></td>
-                        <td><input type="button" value="/" onclick="Chamar(new operaçao('/'))"></td>
+                        <td><input type="button" value="/" onclick="CalcAction('/')"></td>
                     </tr>
                     <tr>
                         <td><input type="button" value="4 " onclick="AddNumber(4)"></td>
                         <td><input type="button" value="5" onclick="AddNumber(5)"></td>
                         <td><input type="button" value="6 " onclick="AddNumber(6)"></td>
-                        <td><input type="button" value="x " onclick="Multiplicar()"></td>
+                        <td><input type="button" value="x " onclick="CalcAction('x')"></td>
                     </tr>
                     <tr>
                         <td><input type="button" value="1 " onclick="AddNumber(1)"></td>
                         <td><input type="button" value="2" onclick="AddNumber(2)"></td>
                         <td><input type="button" value="3 " onclick="AddNumber(3)"></td>
-                        <td><input type="button" value="- " onclick="Diminuir()"></td>
+                        <td><input type="button" value="- " onclick="CalcAction('-')"></td>
                     </tr>
                     <tr>
                         <td><input type="button" value="0 " onclick="AddNumber(0)"></td>
-                        <td><input type="button" value="." onclick="AddNumber('.')"></td>
-                        <td><input type="button" value="= " id="botaoIgual" onclick="operar()"></td>
-                        <td><input type="button" value="+ " ></td>
+                        <td><input type="button" value="." onclick="AddCom()"></td>
+                        <td><input type="button" value="= " id="botaoIgual" onclick="result()"></td>
+                        <td><input type="button" value="+ " onclick="CalcAction('+')"></td>
                     </tr>
                 </table>
                 
@@ -53,9 +55,7 @@
 
         </div>
 
-        <div id="teste">
-
-        </div>
+       
     </main>
 </body>
 <script src="calculator.js" >

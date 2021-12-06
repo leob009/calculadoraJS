@@ -13,11 +13,26 @@ body{
     border-radius: 10px;
 }
 
-#tela{
+#visor{
     height: 140px;
+    overflow: hidden;
+    padding-right: 8px;
+}
+#acumulador{
+    height: 70px;
+    text-align: right ;
+    font-size: 25px;
+    color: rgb(165, 162, 162);
     /* border: 1px solid rgb(0, 0, 0); */
-    text-align: center ;
+}
+
+#tela{
+    height: 70px;
+    text-align: right ;
     font-size: 50px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    
+    
 }
 
 
@@ -56,12 +71,3 @@ table{
 
  }
 
- #teste{
-     width: 300px;
-     height: 100px;
-     background-color: white;
-     margin: auto;
-     text-align: center;
-     font-size: 40px;
- }
- 
