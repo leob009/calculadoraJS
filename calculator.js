@@ -80,5 +80,14 @@ function proccessAction(num1, num2, action){
     }
 }
 
+function Porcentagem(){
+    let CurrentNumber = document.getElementById("tela").innerHTML
+    const operador1 = Number(document.getElementById("acumulador").innerHTML.replace(saveAction, ""))
+    CurrentNumber = (CurrentNumber/100)* operador1
+    document.getElementById("tela").innerHTML = CurrentNumber
+}
+    
+
+
 
 CleanAll()
