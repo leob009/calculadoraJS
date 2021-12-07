@@ -17,6 +17,7 @@ body{
     height: 140px;
     overflow: hidden;
     padding-right: 8px;
+    font-family: 'Shadows Into Light', cursive;
 }
 #acumulador{
     height: 70px;

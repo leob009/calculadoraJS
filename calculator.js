@@ -45,6 +45,7 @@ function CleanCurrent(){
 function CalcAction(action){
     let CurrentNumber = document.getElementById("tela").innerHTML
     saveAction = action
+    
 
     if(!document.getElementById("acumulador").innerHTML.includes(action)){
         document.getElementById("acumulador").innerHTML += CurrentNumber + action
