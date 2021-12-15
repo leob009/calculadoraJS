@@ -44,8 +44,12 @@ function CleanCurrent(){
 
 function CalcAction(action){
     let CurrentNumber = document.getElementById("tela").innerHTML
+    let CurrentAcumulator = document.getElementById("acumulador").innerHTML
     saveAction = action
     
+    if(CurrentNumber != 0 && CurrentAcumulator != 0){
+        result()
+    }
 
     if(!document.getElementById("acumulador").innerHTML.includes(action)){
         document.getElementById("acumulador").innerHTML += CurrentNumber + action

@@ -1,5 +1,3 @@
-
-
 body{
     background: linear-gradient(to right, #738ee6 , #33778a)
     
@@ -7,61 +5,62 @@ body{
 
 #corpoCalculadora{
     background: white;
-    width: 325px;
-    height: 515px;
+    width: 330px; /*325*/
+    height: 505px; /*515*/
     margin: 80px auto 5px;
     border-radius: 10px;
+    overflow: hidden;
+    
 }
 
 #visor{
-    height: 140px;
     overflow: hidden;
     padding-right: 8px;
     font-family: 'Shadows Into Light', cursive;
+    
 }
 #acumulador{
     height: 70px;
     text-align: right ;
     font-size: 25px;
     color: rgb(165, 162, 162);
-    /* border: 1px solid rgb(0, 0, 0); */
+    
 }
 
 #tela{
     height: 70px;
     text-align: right ;
     font-size: 50px;
-    /* border: 1px solid rgb(0, 0, 0); */
     
     
-}
-
-
-table{
-    /* border: 1px solid red; */
-    width: 99%;
     
 }
 
-.botoes td{
+.botoes{
+    width: 325px;
+    height: 380px;
+    margin: auto;
     padding: 0px;
-    margin: 0px;
 }
 
-.botoes input{
+.botoes button{
+    display: inline-block;
     font-weight: bold;
     font-size: 22px;
-    width: 100%;
-    height: 74px;
+    width: 25.3%;
+    height: 20%;
     border: none;
     padding: 0px;
-    border-radius: 3px;
-    /* border: 1px solid red; */
-    
+    margin: -2px;
+   
 }
-.botoes input:hover{
+.botoes button:hover{
     background: rgb(221, 221, 221);
-    transition: 200ms;
+    transition: 300ms;
+}
+.botoes button:active{
+    background: rgb(184, 184, 184);
+    transition: 300ms;
 }
 
 #botaoIgual{
@@ -69,6 +68,17 @@ table{
 }
  #botaoIgual:hover{
     background: rgb(65, 153, 212);
+    transition: 300ms;
 
  }
+
+ #botaoIgual:active{
+    background: rgb(10, 129, 209);
+    transition: 300ms;
+
+ }
+
+.botoesFunçao{
+    background: rgb(228, 226, 226);
+}
 

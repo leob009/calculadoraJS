@@ -14,44 +14,33 @@
         <div id="corpoCalculadora">
             <div id="visor">
                 <div id="acumulador"></div>
-                <div id="tela">0</div>
+                <div id="tela"></div>
                
             </div>
+
             <div class="botoes">
-                <table>
-                    <tr>
-                        <td><input type="button" value="% " onclick="Porcentagem()"></td>
-                        <td><input type="button" value="Ce" onclick="CleanCurrent()"></td>
-                        <td><input type="button" value="C " onclick="CleanAll()"></td>
-                        <td><input type="button" value="«" onclick="BackSpace()"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" value="7 " onclick="AddNumber(7)"></td>
-                        <td><input type="button" value="8" onclick="AddNumber(8)"></td>
-                        <td><input type="button" value="9 " onclick="AddNumber(9)"></td>
-                        <td><input type="button" value="/" onclick="CalcAction('/')"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" value="4 " onclick="AddNumber(4)"></td>
-                        <td><input type="button" value="5" onclick="AddNumber(5)"></td>
-                        <td><input type="button" value="6 " onclick="AddNumber(6)"></td>
-                        <td><input type="button" value="x " onclick="CalcAction('x')"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" value="1 " onclick="AddNumber(1)"></td>
-                        <td><input type="button" value="2" onclick="AddNumber(2)"></td>
-                        <td><input type="button" value="3 " onclick="AddNumber(3)"></td>
-                        <td><input type="button" value="- " onclick="CalcAction('-')"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" value="0 " onclick="AddNumber(0)"></td>
-                        <td><input type="button" value="." onclick="AddCom()"></td>
-                        <td><input type="button" value="= " id="botaoIgual" onclick="result()"></td>
-                        <td><input type="button" value="+ " onclick="CalcAction('+')"></td>
-                    </tr>
-                </table>
-                
+                <button onclick="Porcentagem()" class="botoesFunçao">%</button>
+                <button onclick="CleanCurrent()" class="botoesFunçao">Ce</button>
+                <button onclick="CleanAll()" class="botoesFunçao">C</button>
+                <button onclick="BackSpace()" class="botoesFunçao">bs</button>
+                <button onclick="AddNumber(7)">7</button>
+                <button onclick="AddNumber(8)">8</button>
+                <button onclick="AddNumber(9)">9</button>
+                <button onclick="CalcAction('/')" class="botoesFunçao">/</button>
+                <button onclick="AddNumber(4)">4</button>
+                <button onclick="AddNumber(5)">5</button>
+                <button onclick="AddNumber(6)">6</button>
+                <button onclick="CalcAction('x')" class="botoesFunçao">x</button>
+                <button onclick="AddNumber(1)">1</button>
+                <button onclick="AddNumber(2)">2</button>
+                <button onclick="AddNumber(3)">3</button>
+                <button onclick="CalcAction('-')" class="botoesFunçao">-</button>
+                <button onclick="AddNumber(0)">0</button>
+                <button onclick="AddCom()">.</button>
+                <button onclick="result()" id="botaoIgual">=</button>
+                <button onclick="CalcAction('+')" class="botoesFunçao">+</button>           
             </div>
+                
 
         </div>
 
