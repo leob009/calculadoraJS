@@ -1,12 +1,12 @@
 let saveAction
 
 function AddNumber(num){
-    let CurrentNumber = document.getElementById("tela").innerHTML
-    if (CurrentNumber.length <= 12){
+    let CurrentNumber = document.getElementById("tela")
+    if (CurrentNumber.innerHTML.length <= 12){
         if(CurrentNumber == 0 && !CurrentNumber.includes(".")){
-            document.getElementById("tela").innerHTML = ""
+            CurrentNumber.innerHTML = ""
         } 
-        document.getElementById("tela").innerHTML += num
+        CurrentNumber.innerHTML += num
     }    
 }
 
