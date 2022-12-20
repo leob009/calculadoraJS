@@ -1,20 +1,22 @@
 let saveAction
+let elementoTela = document.getElementById("tela") 
 
 function AddNumber(num){
-    let CurrentNumber = document.getElementById("tela")
-    if (CurrentNumber.innerHTML.length <= 12){
+    const CurrentNumber = document.getElementById("tela").innerHTML
+    
+    if (CurrentNumber.length <= 12){
         if(CurrentNumber == 0 && !CurrentNumber.includes(".")){
-            CurrentNumber.innerHTML = ""
+            elementoTela.innerHTML = ""
         } 
-        CurrentNumber.innerHTML += num
+        elementoTela.innerHTML += num
     }    
 }
 
 function AddCom(){
-    var CurrentNumber = document.getElementById("tela").innerHTML
+    const CurrentNumber = document.getElementById("tela").innerHTML 
 
     if(!CurrentNumber.includes(".")){
-        document.getElementById("tela").innerHTML += '.'
+        elementoTela.innerHTML += '.'
     }
 }
 
@@ -23,11 +25,11 @@ function BackSpace(){
     const novoElemento = elemento.split("")
 
     novoElemento.splice((novoElemento.length -1),1)
-    if(document.getElementById("tela").innerHTML.length > 1){
-        document.getElementById("tela").innerHTML = novoElemento.join('')
+    if(elementoTela.innerHTML.length > 1){
+        elementoTela.innerHTML = novoElemento.join('')
         
     } else{
-        document.getElementById("tela").innerHTML = 0
+        elementoTela.innerHTML = 0
     }
    
 }
