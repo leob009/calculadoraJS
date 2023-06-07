@@ -37,7 +37,7 @@ body{
     width: 325px;
     height: 380px;
     margin: auto;
-    padding: 0px;
+    /* padding: 0px; */
     overflow: hidden;
 }
 
@@ -48,7 +48,7 @@ body{
     width: 25.3%;
     height: 20%;
     border: none;
-    padding: 0px;
+    /* padding: 0px; */
     margin: -2px;
    
 }
