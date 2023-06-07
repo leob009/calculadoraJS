@@ -1,5 +1,64 @@
+// Váriaveis
+
 let saveAction
 let elementoTela = document.getElementById("tela") 
+let botoesNumeros = document.querySelector(".botoes")
+let botoesFunçoes = document.querySelector(".botoesFunçao")
+
+
+// inicio do código
+
+CleanAll()
+
+botoesNumeros.addEventListener("click" , (evento) => {
+    
+    var tecla = evento.target
+    var conteudoTecla = tecla.innerHTML
+    var teclaClasse = tecla.classList.value
+    console.log(teclaClasse)
+    console.log(teclaClasse)
+    
+        if (!isNaN(conteudoTecla)){
+            AddNumber(conteudoTecla)
+
+        } else if (teclaClasse == 'botoesFunçao'){
+            CalcAction(conteudoTecla)
+
+        } else if (conteudoTecla == '='){
+            result()
+
+        } else if (conteudoTecla == '.'){
+            AddCom()
+
+        }
+       
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Funções
 
 function AddNumber(num){
     const CurrentNumber = document.getElementById("tela").innerHTML
@@ -97,4 +156,3 @@ function Porcentagem(){
 
 
 
-CleanAll()
