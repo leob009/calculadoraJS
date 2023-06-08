@@ -11,51 +11,9 @@ let botoesFunçoes = document.querySelector(".botoesFunçao")
 CleanAll()
 
 botoesNumeros.addEventListener("click" , (evento) => {
-    
     var tecla = evento.target
-    var conteudoTecla = tecla.innerHTML
-    var teclaClasse = tecla.classList.value
-    console.log(teclaClasse)
-    console.log(teclaClasse)
-    
-        if (!isNaN(conteudoTecla)){
-            AddNumber(conteudoTecla)
-
-        } else if (teclaClasse == 'botoesFunçao'){
-            CalcAction(conteudoTecla)
-
-        } else if (conteudoTecla == '='){
-            result()
-
-        } else if (conteudoTecla == '.'){
-            AddCom()
-
-        }
-       
-
+    BotaoFunçao(tecla)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Funções
@@ -151,6 +109,31 @@ function Porcentagem(){
     const operador1 = Number(document.getElementById("acumulador").innerHTML.replace(saveAction, ""))
     CurrentNumber = (CurrentNumber/100)* operador1
     document.getElementById("tela").innerHTML = CurrentNumber
+}
+
+function BotaoFunçao(tecla){
+    var conteudoTecla = tecla.innerHTML
+    var teclaClasse = tecla.classList.value
+    
+    if (teclaClasse == 'botoesCalcular'){
+        CalcAction(conteudoTecla)
+    } else if (conteudoTecla == '%'){
+        Porcentagem()
+    } else if (conteudoTecla == 'Ce'){
+        CleanCurrent()
+    } else if (conteudoTecla == 'C'){
+        CleanAll()
+    } else if (conteudoTecla == '⌫'){
+        BackSpace()
+    } else if(conteudoTecla == '='){
+        result()
+    } else if(!isNaN(conteudoTecla)){
+        AddNumber(conteudoTecla)
+
+    }
+
+
+
 }
     
 
